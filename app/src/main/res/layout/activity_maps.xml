@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MapsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/location_search"
+            android:layout_width="314dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="  Introduceti o locatie..."/>
+
+    
+    <ImageButton
+
+        android:id="@+id/search_adress"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClick"
+        android:src="@mipmap/search"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+    
+    </RelativeLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentLeft="true" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_relative_layout">
+
+        <ImageButton
+
+            android:scaleType="fitCenter"
+            android:id="@+id/hospitals_nearby"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="23dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:src="@mipmap/hospital"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>/>
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:id="@+id/police_stations"
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/hospitals_nearby"
+            android:onClick="onClick"
+            android:src="@mipmap/police"
+            android:layout_toRightOf="@+id/hospitals_nearby"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>/>
+
+</RelativeLayout>
+    
+</RelativeLayout>

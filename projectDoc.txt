@@ -1,0 +1,12 @@
+OnMapRreadyCallback: This callback interface invokes when it instance is set on MapFragment object. The onMapReady(GoogleMap) method of OnMapReadyCallback interface is called when the map is ready to used. In the onMapReady(GoogleMap) method we can add markers, listeners and other attributes.
+LocationListener: This interface is used to receive notification when the device location has changed. The abstract method of LocationListener onLocationChanged(Location) is called when the location has changed.
+GoogleApiClient.ConnectionCallbacks: This interface provide callbacks methods onConnected(Bundle) and onConnectionSuspended(int) which are called when the device is to connected and disconnected.
+GoogleApiClient.OnConnectionFailedListener: This interface provide callbacks method onConnectionFailed(ConnectionResult) which is called when there was an error in connecting the device to the service.
+The setMyLocationEnabled() method of GoogleMap is used to enable location layer, which allows device to interact with current location.
+
+https://www.javatpoint.com/android-google-map-displaying-current-location
+https://androidclarified.com/display-current-location-google-map-fusedlocationproviderclient/
+https://stackoverflow.com/questions/45107806/autocomplete-search-bar-in-google-maps
+https://medium.com/@nickwright_15152/creating-an-android-application-to-show-a-list-of-local-restaurants-58a3fecdaa64
+
+https://code.tutsplus.com/tutorials/android-sdk-working-with-google-maps-google-places-integration--mobile-16054
